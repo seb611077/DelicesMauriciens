@@ -1,0 +1,29 @@
+.container {
+    padding: auto;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.apropos {
+    max-width: 70vw;
+}
+
+.mesLi {
+    list-style: none;
+}
+
+.presta {
+   color: white;
+}
+
+.sectionf {
+    width: 100%;
+    position: fixed;
+    bottom:0px;
+}
+
+@media only screen and (max-width: 770px) {
+    .sectionf {
+        visibility: hidden;
+    }
+}

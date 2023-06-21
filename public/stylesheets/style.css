@@ -1,0 +1,257 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+
+body {
+  background-color: #978b8c;
+  color: rgba(54, 25, 22, 1);
+  font-family: Indie flower;
+}
+
+h1 {
+  font-size: 5.5em;
+  font-weight: 800;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  font-weight: 800;
+}
+.soustitre {
+  line-height: 1.4em;
+}
+
+h3 {
+  text-align: center;
+}
+h4 {
+  font-size: 2.1em;
+  font-weight: 800;
+}
+h5 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1em;
+}
+
+th {
+  margin: 50px;
+}
+td {
+  margin: 50px;
+}
+.paragraphe {
+  font-size: 1.3em;
+}
+
+.gras {
+  font-weight: 900;
+}
+
+/* ---- navbar --- */
+.navbar {
+  background-color: #8c3f28;
+  padding: 0px;
+  font-family: "indie flower", serif;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link[aria-current="page"] {
+  text-shadow: 5px 5px 5px black;
+}
+
+a.nav-link:hover {
+  color: #f1f1f1;
+  text-shadow: 5px 5px 5px black;
+}
+
+.nav-item .nav-link {
+  color: white;
+  font-size: 2.1em;
+}
+
+#customers {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: #8c3f28;
+}
+
+.title {
+  font-family: "indie flower", serif;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-size: 8.9em;
+  font-weight: 600;
+  color: #fdfdfd;
+  text-shadow: 10px 10px 15px black;
+}
+
+@media only screen and (max-width: 760px) {
+  .title {
+    font-size: 5em;
+  }
+  h1 {
+    font-size: 4em;
+  }
+}
+
+.main {
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  max-height: 400px;
+  background-image: url(/images/epices-fond.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.center {
+  text-align: center;
+}
+
+.lorem {
+  text-align: center;
+  color: white;
+}
+
+.red {
+  font-weight: 700;
+  color: rgb(194, 5, 5);
+}
+.note {
+  color: white;
+  font-size: 2.1em;
+}
+
+.btn-center {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plus {
+  font-size: large;
+  font-weight: 800;
+
+  width: 80px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #8c3f28;
+}
+
+/*-- CARD --*/
+.card {
+  margin: auto;
+  margin-top: 30px;
+  background-color: rgba(106, 93, 80, 0.507);
+  min-height: 415px;
+}
+
+.card-img-top {
+  margin-top: 10px;
+  height: 20vh;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 2em;
+  margin-top: 1rem;
+}
+
+.btn {
+  font-family: Indie flower;
+  background-color: #8c3f28;
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgba(216, 164, 115, 0.623);
+}
+
+/* scroll tot top */
+
+.scroll-to-top {
+  position: relative;
+}
+
+.btn-position {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 20;
+}
+
+.btn-style {
+  background-color: #8c3f28;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  animation: movebtn 3s ease-in-out infinite;
+  transition: all 0.5s ease-in-out;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.icon-style:hover {
+  animation: none;
+  background: #fff;
+  color: #551b54;
+  border: 2px solid #551b54;
+}
+
+@keyframes movebtn {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+/*-- footer --*/
+
+.footer-links {
+  margin: 0 auto;
+}
+
+.credits a {
+  color: rgba(198, 35, 15, 1);
+}

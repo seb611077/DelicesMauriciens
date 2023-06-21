@@ -1,0 +1,69 @@
+<!-- contact form-->
+<h1 class="mt-5">Contact</h1>
+<h2>Tél. 07 45 00 90 66</h2>
+<br /><br />
+<h3>ou via notre formulaire de contact</h3>
+
+<!-- <div id="cgv">
+</div> -->
+
+<form id="send" action="/contact_send" method="post">
+  <div class="container-form mb-5 mt-5">
+    <div class="mb-3">
+      <label for="DataList" class="form-label">Quel est votre demande </label>
+      <select
+        class="form-select"
+        name="sujet"
+        aria-label="Default select example"
+      >
+        <option selected value="Demande de renseignements">
+          Demande de renseignements
+        </option>
+        <option value="Devis">Devis</option>
+        <option value="Prise de rendez-vous">Prise de rendez-vous</option>
+        <option value="Autres">Autres</option>
+      </select>
+
+      <label for="FormControlInput" class="form-label mt-5"
+        >Veullez saisir votre email ci-dessous</label
+      >
+      <input
+        name="email"
+        type="email"
+        class="form-control"
+        id="FormControlInput"
+        placeholder="exemple@mail.fr"
+        required="required"
+      />
+    </div>
+    <div class="mb-3 mt-5">
+      <label for="FormControlTextarea" class="form-label"
+        >Veullez saisir votre texte ci-dessous</label
+      >
+      <textarea
+        name="message"
+        class="form-control"
+        id="FormControlTextarea"
+        rows="3"
+        required="required"
+      ></textarea>
+    </div>
+    <div class="mb-3 mt-5">
+      <label
+        for="FormControlNumber"
+        class="form-number"
+        name="form-number"
+      ></label>
+      <input
+        name="nbrVerif"
+        class="form-control center"
+        id="FormControlNumber"
+        type="text"
+        required="required"
+      />
+      <button type="submit" class="btn center mt-4">ENVOYER</button>
+    </div>
+  </div>
+</form>
+
+<script src="/javascripts/numberVerif.js"></script>
